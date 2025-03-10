@@ -466,12 +466,12 @@
       )
   }
 
-  $: showNumbers = false
+  $: showNumbers = true
   $: showHandicap = false
 
   const labelColor = (disabled: boolean): string => disabled ? "gray" : "white"
 
-  $: disableShowNumbers = true
+  $: disableShowNumbers = false
 
   const hero = heroes[heroName] as Hero
   const fullName = hero.name + " " + hero.title
